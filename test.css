@@ -1,0 +1,45 @@
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+#list {
+  text-align: left;
+}
+
+#body {
+  display: grid;
+  grid-template-columns: minmax(300px, auto) 1fr;
+  grid-template-areas: "navbar mainContent";
+  grid-gap: 20px;
+}
+
+#navbar {
+  grid-area: navbar;
+  position: fixed;
+}
+
+#main-doc {
+  grid-area: main;
+}
+
+#navbar a {
+  display: block;
+  border: 0.1px solid black;
+  margin: 5px;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+code {
+  background-color: #ccc;
+  display: block;
+  padding: 20px;
+}
